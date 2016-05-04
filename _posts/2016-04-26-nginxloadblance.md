@@ -57,7 +57,7 @@ http {
     # for more information.
     include /etc/nginx/conf.d/*.conf;
 
-    upstream nodejs.bling.com {
+    upstream nodejs.test.com {
         server 127.0.0.1:3000;
         #server 127.0.0.1:3001;
     }
@@ -81,7 +81,7 @@ http {
            proxy_redirect off;
            proxy_set_header X-Real-IP $remote_addr;
            proxy_set_header X-Scheme $scheme;
-           proxy_pass http://nodejs.bling.com;
+           proxy_pass http://nodejs.test.com;
         }
 
         #error_page 404 /404.html;
@@ -115,7 +115,7 @@ http {
             proxy_redirect off;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Scheme $scheme;
-            proxy_pass http://nodejs.bling.com;
+            proxy_pass http://nodejs.test.com;
         }
 
     }
