@@ -1,0 +1,62 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.weibo_username %}
+          <li>
+            {% include icon-weibo.html username=site.weibo_username %}
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+    
+    <div class="friends">
+      {% if site.friends %}
+        <div>友情链接</div>
+        <ul class="friends-list">
+          {% for friend in site.friends %}
+            <li class="friend-li">
+              <a href="{{ friend.link }}">
+                <span class="icon icon--friend">{% include icon-friend.svg %}</span>
+                {{ friend.name }}
+              </a>
+            </li>
+          {% endfor%}
+        </ul>
+      {% endif %}
+    </div>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257165464'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257165464%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div>
+  
+</footer>
+
