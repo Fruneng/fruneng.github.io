@@ -12,7 +12,6 @@ tags: [systemtap]
 
 ```
 yum --enablerepo=*-debuginfo --showduplicates list kernel kernel-devel kernel-debuginfo
-
 ```
 
 看一下内核的版本 安装对应的kernel-debuginfo
