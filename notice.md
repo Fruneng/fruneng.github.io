@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于
+title: 对世界的善意
 permalink: /notice/
 ---
 
