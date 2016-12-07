@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "nodejs flame graphls"
+title: "nodejs flame graphs"
 description: ""
 category: 
 tags: [systemtap]
